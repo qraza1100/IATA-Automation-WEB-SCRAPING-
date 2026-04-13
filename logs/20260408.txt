@@ -1,0 +1,326 @@
+2026-04-08 18:18:56.190 +05:00 [INF] ═════════════════════════════════════════════════════
+2026-04-08 18:18:56.371 +05:00 [INF]    IATA Traacs Automation - .NET 9 Console App
+2026-04-08 18:18:56.373 +05:00 [INF] ═════════════════════════════════════════════════════
+2026-04-08 18:18:56.540 +05:00 [INF] ═════════════════════════════════════════════════════
+2026-04-08 18:18:56.541 +05:00 [INF]    IATA Portal Automation - Main Menu
+2026-04-08 18:18:56.543 +05:00 [INF] ═════════════════════════════════════════════════════
+2026-04-08 18:18:56.544 +05:00 [INF] 
+2026-04-08 18:18:56.545 +05:00 [INF] 1. Full Authentication (Login + MFA Setup)
+2026-04-08 18:18:56.546 +05:00 [INF] 2. Login and OTP Injection
+2026-04-08 18:18:56.547 +05:00 [INF] 3. Generate TOTP Code
+2026-04-08 18:18:56.548 +05:00 [INF] 4. View Stored Secret Info
+2026-04-08 18:18:56.549 +05:00 [INF] 5. Run Billing Analysis (Excel Export)
+2026-04-08 18:18:56.549 +05:00 [INF] 6. Exit
+2026-04-08 18:18:56.550 +05:00 [INF] 
+2026-04-08 18:18:56.551 +05:00 [INF] ═════════════════════════════════════════════════════
+2026-04-08 18:18:56.552 +05:00 [INF] Select an option (1-6): 
+2026-04-08 18:19:01.994 +05:00 [INF] 
+
+2026-04-08 18:19:02.002 +05:00 [INF] ═════════════════════════════════════════════════════
+2026-04-08 18:19:02.009 +05:00 [INF] STARTING COMPLETE AUTHENTICATION FLOW
+2026-04-08 18:19:02.015 +05:00 [INF] ═════════════════════════════════════════════════════
+2026-04-08 18:19:02.020 +05:00 [INF] 
+[1/4] Initializing browser...
+2026-04-08 18:19:02.314 +05:00 [INF] Initializing Chrome WebDriver...
+2026-04-08 18:19:06.234 +05:00 [INF] ✓ Chrome WebDriver initialized successfully
+2026-04-08 18:19:06.237 +05:00 [INF] 
+[2/4] Navigating to login page...
+2026-04-08 18:19:06.245 +05:00 [INF] Navigating to: https://portal.iata.org/s/?first2FAActivated=%27true%27&language=en_US
+2026-04-08 18:19:09.312 +05:00 [INF] ✓ Navigation complete
+2026-04-08 18:19:09.317 +05:00 [INF] 
+[3/4] Performing login...
+2026-04-08 18:19:09.324 +05:00 [INF] Performing login...
+2026-04-08 18:19:20.489 +05:00 [INF] ✓ Login performed
+2026-04-08 18:19:20.491 +05:00 [INF] 
+[4/4] Setting up MFA...
+2026-04-08 18:19:20.545 +05:00 [INF] Retrieved secret for site: iata_portal
+2026-04-08 18:19:25.644 +05:00 [INF] [*] Detecting current MFA state...
+2026-04-08 18:19:25.748 +05:00 [INF] [+] On reset flow page
+2026-04-08 18:19:37.838 +05:00 [INF] [*] Detecting current MFA state...
+2026-04-08 18:19:37.868 +05:00 [INF] [+] On security question page
+2026-04-08 18:19:48.730 +05:00 [INF] [*] Detecting current MFA state...
+2026-04-08 18:19:48.737 +05:00 [INF] [+] Already on QR setup page
+2026-04-08 18:19:48.755 +05:00 [INF] [+] Secret Extracted: O6EH4J4UTGMW3KCJOMZ47P6RU5YWEAQE
+2026-04-08 18:19:49.218 +05:00 [INF] [+] OTP entered and submitted
+2026-04-08 18:19:54.225 +05:00 [INF] New secret extracted. Saving to iata_portal...
+2026-04-08 18:19:54.278 +05:00 [INF] Saved secret for site: iata_portal
+2026-04-08 18:19:59.299 +05:00 [INF] [*] Detecting current MFA state...
+2026-04-08 18:19:59.312 +05:00 [INF] [+] Already on QR setup page
+2026-04-08 18:19:59.343 +05:00 [INF] [+] Secret Extracted: O6EH4J4UTGMW3KCJOMZ47P6RU5YWEAQE
+2026-04-08 18:19:59.827 +05:00 [INF] [+] OTP entered and submitted
+2026-04-08 18:20:04.833 +05:00 [INF] ✓ AUTHENTICATION SUCCESSFUL!
+2026-04-08 18:20:04.838 +05:00 [INF] ✓ TOTP Secret stored securely
+2026-04-08 18:20:04.843 +05:00 [INF] 
+Total execution time: 00:01:02
+2026-04-08 18:20:04.849 +05:00 [INF] ═════════════════════════════════════════════════════
+
+2026-04-08 18:20:04.854 +05:00 [INF] 
+
+2026-04-08 18:20:04.856 +05:00 [INF] ═════════════════════════════════════════════════════
+2026-04-08 18:20:04.859 +05:00 [INF] AUTHENTICATION RESULT
+2026-04-08 18:20:04.861 +05:00 [INF] ═════════════════════════════════════════════════════
+2026-04-08 18:20:04.863 +05:00 [INF] Status: ✓ SUCCESS
+2026-04-08 18:20:04.868 +05:00 [INF] Message: MFA handling complete
+2026-04-08 18:20:04.874 +05:00 [INF] Secret Extracted: ✓ Yes
+2026-04-08 18:20:04.879 +05:00 [INF] Duration: 00:01:02
+2026-04-08 18:20:04.883 +05:00 [INF] ═════════════════════════════════════════════════════
+2026-04-08 18:20:04.890 +05:00 [INF] 
+Press Enter to continue...
+2026-04-08 18:20:20.995 +05:00 [INF] Starting Billing Analysis...
+2026-04-08 18:20:21.960 +05:00 [INF] Navigating to: https://portal.iata.org/s/?first2FAActivated=%27true%27&language=en_US
+2026-04-08 18:20:26.682 +05:00 [INF] ✓ Navigation complete
+2026-04-08 18:20:26.700 +05:00 [INF] Checking for 'Continue to Homepage' popup...
+2026-04-08 18:20:27.445 +05:00 [INF] ✓ Popup dismantled.
+2026-04-08 18:20:27.447 +05:00 [INF] Navigating to BSPLink...
+2026-04-08 18:20:27.451 +05:00 [INF] Navigating to: https://portal.iata.org/idp/login?app=0spc400000000uT
+2026-04-08 18:20:31.880 +05:00 [INF] ✓ Navigation complete
+2026-04-08 18:20:52.246 +05:00 [INF] Fetching billing analysis data...
+2026-04-08 18:20:52.253 +05:00 [INF] Navigating to: https://gateway-dmz.newbsplink.iata.org/api/globalsearch/billing-analysis?page=0&size=100000000&filters=billingAnalysisEndDate%3A%3Agte%3A%3A2026-04-04%2CbillingAnalysisEndDate%3A%3Alte%3A%3A2026-04-08%2CtransactionCode%3A%3Ain%3A%3ARFND%2CisoCountryCode%3A%3Aeq%3A%3APK
+2026-04-08 18:20:53.168 +05:00 [INF] ✓ Navigation complete
+2026-04-08 18:20:56.184 +05:00 [INF] Navigating to: https://gateway-dmz.newbsplink.iata.org/api/document-enquiry/documents/3475636920-2987-UEtfTUlTWUlOREhPVF8yMDI2MDQwMy56aXA=
+2026-04-08 18:20:56.604 +05:00 [INF] ✓ Navigation complete
+2026-04-08 18:20:56.655 +05:00 [INF] Processed Doc: 3475636920 | FP: 0
+2026-04-08 18:20:59.365 +05:00 [INF] Navigating to: https://gateway-dmz.newbsplink.iata.org/api/document-enquiry/documents/5518303202-2988-UEtfTUlTWUlOREhPVF8yMDI2MDQwMy56aXA=
+2026-04-08 18:20:59.680 +05:00 [INF] ✓ Navigation complete
+2026-04-08 18:20:59.730 +05:00 [INF] Processed Doc: 5518303202 | FP: 543790
+2026-04-08 18:21:01.911 +05:00 [INF] Navigating to: https://gateway-dmz.newbsplink.iata.org/api/document-enquiry/documents/5518303203-2989-UEtfTUlTWUlOREhPVF8yMDI2MDQwMy56aXA=
+2026-04-08 18:21:02.171 +05:00 [INF] ✓ Navigation complete
+2026-04-08 18:21:02.212 +05:00 [INF] Processed Doc: 5518303203 | FP: 543790
+2026-04-08 18:21:05.180 +05:00 [INF] Navigating to: https://gateway-dmz.newbsplink.iata.org/api/document-enquiry/documents/5518303204-2990-UEtfTUlTWUlOREhPVF8yMDI2MDQwMy56aXA=
+2026-04-08 18:21:05.622 +05:00 [INF] ✓ Navigation complete
+2026-04-08 18:21:05.657 +05:00 [INF] Processed Doc: 5518303204 | FP: 543790
+2026-04-08 18:21:08.066 +05:00 [INF] Navigating to: https://gateway-dmz.newbsplink.iata.org/api/document-enquiry/documents/5518360874-2991-UEtfTUlTWUlOREhPVF8yMDI2MDQwMy56aXA=
+2026-04-08 18:21:08.384 +05:00 [INF] ✓ Navigation complete
+2026-04-08 18:21:08.422 +05:00 [INF] Processed Doc: 5518360874 | FP: 850
+2026-04-08 18:21:11.220 +05:00 [INF] Navigating to: https://gateway-dmz.newbsplink.iata.org/api/document-enquiry/documents/5854085869-2992-UEtfTUlTWUlOREhPVF8yMDI2MDQwMy56aXA=
+2026-04-08 18:21:11.659 +05:00 [INF] ✓ Navigation complete
+2026-04-08 18:21:11.695 +05:00 [INF] Processed Doc: 5854085869 | FP: 63200
+2026-04-08 18:21:14.089 +05:00 [INF] Navigating to: https://gateway-dmz.newbsplink.iata.org/api/document-enquiry/documents/6501746025-2993-UEtfTUlTWUlOREhPVF8yMDI2MDQwMy56aXA=
+2026-04-08 18:21:14.550 +05:00 [INF] ✓ Navigation complete
+2026-04-08 18:21:14.593 +05:00 [INF] Processed Doc: 6501746025 | FP: 138900
+2026-04-08 18:21:17.342 +05:00 [INF] Navigating to: https://gateway-dmz.newbsplink.iata.org/api/document-enquiry/documents/6909109549-2994-UEtfTUlTWUlOREhPVF8yMDI2MDQwMy56aXA=
+2026-04-08 18:21:17.696 +05:00 [INF] ✓ Navigation complete
+2026-04-08 18:21:17.725 +05:00 [INF] Processed Doc: 6909109549 | FP: 466420
+2026-04-08 18:21:20.313 +05:00 [INF] Navigating to: https://gateway-dmz.newbsplink.iata.org/api/document-enquiry/documents/6909115841-2995-UEtfTUlTWUlOREhPVF8yMDI2MDQwMy56aXA=
+2026-04-08 18:21:20.667 +05:00 [INF] ✓ Navigation complete
+2026-04-08 18:21:20.701 +05:00 [INF] Processed Doc: 6909115841 | FP: 123720
+2026-04-08 18:21:22.427 +05:00 [INF] Navigating to: https://gateway-dmz.newbsplink.iata.org/api/document-enquiry/documents/6909128542-2996-UEtfTUlTWUlOREhPVF8yMDI2MDQwMy56aXA=
+2026-04-08 18:21:22.709 +05:00 [INF] ✓ Navigation complete
+2026-04-08 18:21:22.735 +05:00 [INF] Processed Doc: 6909128542 | FP: 58790
+2026-04-08 18:21:24.306 +05:00 [INF] Navigating to: https://gateway-dmz.newbsplink.iata.org/api/document-enquiry/documents/6909151279-2997-UEtfTUlTWUlOREhPVF8yMDI2MDQwMy56aXA=
+2026-04-08 18:21:25.584 +05:00 [INF] ✓ Navigation complete
+2026-04-08 18:21:25.605 +05:00 [INF] Processed Doc: 6909151279 | FP: 91490
+2026-04-08 18:21:27.792 +05:00 [INF] Navigating to: https://gateway-dmz.newbsplink.iata.org/api/document-enquiry/documents/6909138832-2962-UEtfTUlTWUlOREhPVF8yMDI2MDQwNC56aXA=
+2026-04-08 18:21:28.052 +05:00 [INF] ✓ Navigation complete
+2026-04-08 18:21:28.084 +05:00 [INF] Processed Doc: 6909138832 | FP: 29680
+2026-04-08 18:21:30.986 +05:00 [INF] Navigating to: https://gateway-dmz.newbsplink.iata.org/api/document-enquiry/documents/6909144427-2963-UEtfTUlTWUlOREhPVF8yMDI2MDQwNC56aXA=
+2026-04-08 18:21:31.324 +05:00 [INF] ✓ Navigation complete
+2026-04-08 18:21:31.365 +05:00 [INF] Processed Doc: 6909144427 | FP: 41190
+2026-04-08 18:21:33.819 +05:00 [INF] Navigating to: https://gateway-dmz.newbsplink.iata.org/api/document-enquiry/documents/6909149859-2964-UEtfTUlTWUlOREhPVF8yMDI2MDQwNC56aXA=
+2026-04-08 18:21:34.289 +05:00 [INF] ✓ Navigation complete
+2026-04-08 18:21:34.335 +05:00 [INF] Processed Doc: 6909149859 | FP: 85960
+2026-04-08 18:21:36.972 +05:00 [INF] Navigating to: https://gateway-dmz.newbsplink.iata.org/api/document-enquiry/documents/5854069732-2961-UEtfTUlTWUlOREhPVF8yMDI2MDQwNC56aXA=
+2026-04-08 18:21:37.464 +05:00 [INF] ✓ Navigation complete
+2026-04-08 18:21:37.500 +05:00 [INF] Processed Doc: 5854069732 | FP: 300696
+2026-04-08 18:21:39.289 +05:00 [INF] Navigating to: https://gateway-dmz.newbsplink.iata.org/api/document-enquiry/documents/4089696221-2960-UEtfTUlTWUlOREhPVF8yMDI2MDQwNC56aXA=
+2026-04-08 18:21:39.540 +05:00 [INF] ✓ Navigation complete
+2026-04-08 18:21:39.600 +05:00 [INF] Processed Doc: 4089696221 | FP: 74
+2026-04-08 18:21:42.316 +05:00 [INF] Navigating to: https://gateway-dmz.newbsplink.iata.org/api/document-enquiry/documents/5580247239-3096-UEtfTUlTWUlOREhPVF8yMDI2MDQwMi56aXA=
+2026-04-08 18:21:42.587 +05:00 [INF] ✓ Navigation complete
+2026-04-08 18:21:42.630 +05:00 [INF] Processed Doc: 5580247239 | FP: 76220
+2026-04-08 18:21:45.160 +05:00 [INF] Navigating to: https://gateway-dmz.newbsplink.iata.org/api/document-enquiry/documents/5580247240-3097-UEtfTUlTWUlOREhPVF8yMDI2MDQwMi56aXA=
+2026-04-08 18:21:45.651 +05:00 [INF] ✓ Navigation complete
+2026-04-08 18:21:45.674 +05:00 [INF] Processed Doc: 5580247240 | FP: 76220
+2026-04-08 18:21:48.504 +05:00 [INF] Navigating to: https://gateway-dmz.newbsplink.iata.org/api/document-enquiry/documents/5853944073-3098-UEtfTUlTWUlOREhPVF8yMDI2MDQwMi56aXA=
+2026-04-08 18:21:49.544 +05:00 [INF] ✓ Navigation complete
+2026-04-08 18:21:49.570 +05:00 [INF] Processed Doc: 5853944073 | FP: 7710
+2026-04-08 18:21:51.976 +05:00 [INF] Navigating to: https://gateway-dmz.newbsplink.iata.org/api/document-enquiry/documents/5853986142-3099-UEtfTUlTWUlOREhPVF8yMDI2MDQwMi56aXA=
+2026-04-08 18:21:52.444 +05:00 [INF] ✓ Navigation complete
+2026-04-08 18:21:52.470 +05:00 [INF] Processed Doc: 5853986142 | FP: 42050
+2026-04-08 18:21:55.457 +05:00 [INF] Navigating to: https://gateway-dmz.newbsplink.iata.org/api/document-enquiry/documents/5853986143-3100-UEtfTUlTWUlOREhPVF8yMDI2MDQwMi56aXA=
+2026-04-08 18:21:56.508 +05:00 [INF] ✓ Navigation complete
+2026-04-08 18:21:56.539 +05:00 [INF] Processed Doc: 5853986143 | FP: 42050
+2026-04-08 18:21:58.695 +05:00 [INF] Navigating to: https://gateway-dmz.newbsplink.iata.org/api/document-enquiry/documents/5854049338-3101-UEtfTUlTWUlOREhPVF8yMDI2MDQwMi56aXA=
+2026-04-08 18:21:59.032 +05:00 [INF] ✓ Navigation complete
+2026-04-08 18:21:59.087 +05:00 [INF] Processed Doc: 5854049338 | FP: 82546
+2026-04-08 18:22:00.897 +05:00 [INF] Navigating to: https://gateway-dmz.newbsplink.iata.org/api/document-enquiry/documents/6909146170-3107-UEtfTUlTWUlOREhPVF8yMDI2MDQwMi56aXA=
+2026-04-08 18:22:01.137 +05:00 [INF] ✓ Navigation complete
+2026-04-08 18:22:01.165 +05:00 [INF] Processed Doc: 6909146170 | FP: 62180
+2026-04-08 18:22:03.057 +05:00 [INF] Navigating to: https://gateway-dmz.newbsplink.iata.org/api/document-enquiry/documents/2278726007-3094-UEtfTUlTWUlOREhPVF8yMDI2MDQwMi56aXA=
+2026-04-08 18:22:03.296 +05:00 [INF] ✓ Navigation complete
+2026-04-08 18:22:03.331 +05:00 [INF] Processed Doc: 2278726007 | FP: 0
+2026-04-08 18:22:05.290 +05:00 [INF] Navigating to: https://gateway-dmz.newbsplink.iata.org/api/document-enquiry/documents/2278726009-3095-UEtfTUlTWUlOREhPVF8yMDI2MDQwMi56aXA=
+2026-04-08 18:22:05.820 +05:00 [INF] ✓ Navigation complete
+2026-04-08 18:22:05.859 +05:00 [INF] Processed Doc: 2278726009 | FP: 0
+2026-04-08 18:22:08.239 +05:00 [INF] Navigating to: https://gateway-dmz.newbsplink.iata.org/api/document-enquiry/documents/5854049339-3102-UEtfTUlTWUlOREhPVF8yMDI2MDQwMi56aXA=
+2026-04-08 18:22:08.595 +05:00 [INF] ✓ Navigation complete
+2026-04-08 18:22:08.620 +05:00 [INF] Processed Doc: 5854049339 | FP: 82546
+2026-04-08 18:22:10.496 +05:00 [INF] Navigating to: https://gateway-dmz.newbsplink.iata.org/api/document-enquiry/documents/6909118097-3103-UEtfTUlTWUlOREhPVF8yMDI2MDQwMi56aXA=
+2026-04-08 18:22:10.929 +05:00 [INF] ✓ Navigation complete
+2026-04-08 18:22:10.957 +05:00 [INF] Processed Doc: 6909118097 | FP: 21260
+2026-04-08 18:22:13.710 +05:00 [INF] Navigating to: https://gateway-dmz.newbsplink.iata.org/api/document-enquiry/documents/6909121941-3104-UEtfTUlTWUlOREhPVF8yMDI2MDQwMi56aXA=
+2026-04-08 18:22:13.950 +05:00 [INF] ✓ Navigation complete
+2026-04-08 18:22:13.977 +05:00 [INF] Processed Doc: 6909121941 | FP: 35940
+2026-04-08 18:22:16.591 +05:00 [INF] Navigating to: https://gateway-dmz.newbsplink.iata.org/api/document-enquiry/documents/6909125045-3105-UEtfTUlTWUlOREhPVF8yMDI2MDQwMi56aXA=
+2026-04-08 18:22:16.844 +05:00 [INF] ✓ Navigation complete
+2026-04-08 18:22:16.886 +05:00 [INF] Processed Doc: 6909125045 | FP: 43730
+2026-04-08 18:22:19.608 +05:00 [INF] Navigating to: https://gateway-dmz.newbsplink.iata.org/api/document-enquiry/documents/6909144426-3106-UEtfTUlTWUlOREhPVF8yMDI2MDQwMi56aXA=
+2026-04-08 18:22:20.294 +05:00 [INF] ✓ Navigation complete
+2026-04-08 18:22:20.330 +05:00 [INF] Processed Doc: 6909144426 | FP: 122600
+2026-04-08 18:22:23.241 +05:00 [INF] Navigating to: https://gateway-dmz.newbsplink.iata.org/api/document-enquiry/documents/3513330602-3547-UEtfTUlTWUlOREhPVF8yMDI2MDQwMS56aXA=
+2026-04-08 18:22:23.540 +05:00 [INF] ✓ Navigation complete
+2026-04-08 18:22:23.580 +05:00 [INF] Processed Doc: 3513330602 | FP: 7560
+2026-04-08 18:22:26.534 +05:00 [INF] Navigating to: https://gateway-dmz.newbsplink.iata.org/api/document-enquiry/documents/4000159986-3548-UEtfTUlTWUlOREhPVF8yMDI2MDQwMS56aXA=
+2026-04-08 18:22:26.827 +05:00 [INF] ✓ Navigation complete
+2026-04-08 18:22:26.859 +05:00 [INF] Processed Doc: 4000159986 | FP: 26101
+2026-04-08 18:22:28.507 +05:00 [INF] Navigating to: https://gateway-dmz.newbsplink.iata.org/api/document-enquiry/documents/6501745959-3549-UEtfTUlTWUlOREhPVF8yMDI2MDQwMS56aXA=
+2026-04-08 18:22:29.066 +05:00 [INF] ✓ Navigation complete
+2026-04-08 18:22:29.138 +05:00 [INF] Processed Doc: 6501745959 | FP: 8130
+2026-04-08 18:22:30.663 +05:00 [INF] Navigating to: https://gateway-dmz.newbsplink.iata.org/api/document-enquiry/documents/6501746053-3550-UEtfTUlTWUlOREhPVF8yMDI2MDQwMS56aXA=
+2026-04-08 18:22:31.021 +05:00 [INF] ✓ Navigation complete
+2026-04-08 18:22:31.060 +05:00 [INF] Processed Doc: 6501746053 | FP: 0
+2026-04-08 18:22:33.978 +05:00 [INF] Navigating to: https://gateway-dmz.newbsplink.iata.org/api/document-enquiry/documents/6501746054-3551-UEtfTUlTWUlOREhPVF8yMDI2MDQwMS56aXA=
+2026-04-08 18:22:34.430 +05:00 [INF] ✓ Navigation complete
+2026-04-08 18:22:34.467 +05:00 [INF] Processed Doc: 6501746054 | FP: 0
+2026-04-08 18:22:37.138 +05:00 [INF] Navigating to: https://gateway-dmz.newbsplink.iata.org/api/document-enquiry/documents/6501746055-3552-UEtfTUlTWUlOREhPVF8yMDI2MDQwMS56aXA=
+2026-04-08 18:22:37.457 +05:00 [INF] ✓ Navigation complete
+2026-04-08 18:22:37.484 +05:00 [INF] Processed Doc: 6501746055 | FP: 0
+2026-04-08 18:22:39.639 +05:00 [INF] Navigating to: https://gateway-dmz.newbsplink.iata.org/api/document-enquiry/documents/6501746056-3553-UEtfTUlTWUlOREhPVF8yMDI2MDQwMS56aXA=
+2026-04-08 18:22:40.337 +05:00 [INF] ✓ Navigation complete
+2026-04-08 18:22:40.371 +05:00 [INF] Processed Doc: 6501746056 | FP: 0
+2026-04-08 18:22:42.117 +05:00 [INF] Navigating to: https://gateway-dmz.newbsplink.iata.org/api/document-enquiry/documents/6501746057-3554-UEtfTUlTWUlOREhPVF8yMDI2MDQwMS56aXA=
+2026-04-08 18:22:42.491 +05:00 [INF] ✓ Navigation complete
+2026-04-08 18:22:42.524 +05:00 [INF] Processed Doc: 6501746057 | FP: 0
+2026-04-08 18:22:45.428 +05:00 [INF] Navigating to: https://gateway-dmz.newbsplink.iata.org/api/document-enquiry/documents/6909129019-3555-UEtfTUlTWUlOREhPVF8yMDI2MDQwMS56aXA=
+2026-04-08 18:22:45.767 +05:00 [INF] ✓ Navigation complete
+2026-04-08 18:22:45.802 +05:00 [INF] Processed Doc: 6909129019 | FP: 38910
+2026-04-08 18:22:47.730 +05:00 [INF] Navigating to: https://gateway-dmz.newbsplink.iata.org/api/document-enquiry/documents/6909145035-3556-UEtfTUlTWUlOREhPVF8yMDI2MDQwMS56aXA=
+2026-04-08 18:22:48.328 +05:00 [INF] ✓ Navigation complete
+2026-04-08 18:22:48.370 +05:00 [INF] Processed Doc: 6909145035 | FP: 34320
+2026-04-08 18:22:50.515 +05:00 [INF] Navigating to: https://gateway-dmz.newbsplink.iata.org/api/document-enquiry/documents/5580263441-1217-UEtfTUlTWUlOREhPVF8yMDI2MDQwNS56aXA=
+2026-04-08 18:22:50.995 +05:00 [INF] ✓ Navigation complete
+2026-04-08 18:22:51.050 +05:00 [INF] Processed Doc: 5580263441 | FP: 0
+2026-04-08 18:22:53.770 +05:00 [INF] Navigating to: https://gateway-dmz.newbsplink.iata.org/api/document-enquiry/documents/2278726012-1215-UEtfTUlTWUlOREhPVF8yMDI2MDQwNS56aXA=
+2026-04-08 18:22:54.159 +05:00 [INF] ✓ Navigation complete
+2026-04-08 18:22:54.214 +05:00 [INF] Processed Doc: 2278726012 | FP: 0
+2026-04-08 18:22:56.525 +05:00 [INF] Navigating to: https://gateway-dmz.newbsplink.iata.org/api/document-enquiry/documents/3475637012-1216-UEtfTUlTWUlOREhPVF8yMDI2MDQwNS56aXA=
+2026-04-08 18:22:56.826 +05:00 [INF] ✓ Navigation complete
+2026-04-08 18:22:56.892 +05:00 [INF] Processed Doc: 3475637012 | FP: 0
+2026-04-08 18:22:59.142 +05:00 [INF] Navigating to: https://gateway-dmz.newbsplink.iata.org/api/document-enquiry/documents/5854049328-1218-UEtfTUlTWUlOREhPVF8yMDI2MDQwNS56aXA=
+2026-04-08 18:22:59.414 +05:00 [INF] ✓ Navigation complete
+2026-04-08 18:22:59.448 +05:00 [INF] Processed Doc: 5854049328 | FP: 5890
+2026-04-08 18:23:01.464 +05:00 [INF] Navigating to: https://gateway-dmz.newbsplink.iata.org/api/document-enquiry/documents/4089696223-2961-UEtfTUlTWUlOREhPVF8yMDI2MDQwNi56aXA=
+2026-04-08 18:23:01.845 +05:00 [INF] ✓ Navigation complete
+2026-04-08 18:23:01.879 +05:00 [INF] Processed Doc: 4089696223 | FP: 96
+2026-04-08 18:23:04.821 +05:00 [INF] Navigating to: https://gateway-dmz.newbsplink.iata.org/api/document-enquiry/documents/5853924060-2964-UEtfTUlTWUlOREhPVF8yMDI2MDQwNi56aXA=
+2026-04-08 18:23:05.512 +05:00 [INF] ✓ Navigation complete
+2026-04-08 18:23:05.532 +05:00 [INF] Processed Doc: 5853924060 | FP: 249890
+2026-04-08 18:23:08.250 +05:00 [INF] Navigating to: https://gateway-dmz.newbsplink.iata.org/api/document-enquiry/documents/5853924076-2967-UEtfTUlTWUlOREhPVF8yMDI2MDQwNi56aXA=
+2026-04-08 18:23:08.566 +05:00 [INF] ✓ Navigation complete
+2026-04-08 18:23:08.599 +05:00 [INF] Processed Doc: 5853924076 | FP: 249890
+2026-04-08 18:23:10.233 +05:00 [INF] Navigating to: https://gateway-dmz.newbsplink.iata.org/api/document-enquiry/documents/5854015261-2968-UEtfTUlTWUlOREhPVF8yMDI2MDQwNi56aXA=
+2026-04-08 18:23:10.544 +05:00 [INF] ✓ Navigation complete
+2026-04-08 18:23:10.562 +05:00 [INF] Processed Doc: 5854015261 | FP: 0
+2026-04-08 18:23:12.201 +05:00 [INF] Navigating to: https://gateway-dmz.newbsplink.iata.org/api/document-enquiry/documents/5854015262-2969-UEtfTUlTWUlOREhPVF8yMDI2MDQwNi56aXA=
+2026-04-08 18:23:12.494 +05:00 [INF] ✓ Navigation complete
+2026-04-08 18:23:12.539 +05:00 [INF] Processed Doc: 5854015262 | FP: 0
+2026-04-08 18:23:14.818 +05:00 [INF] Navigating to: https://gateway-dmz.newbsplink.iata.org/api/document-enquiry/documents/5854069666-2970-UEtfTUlTWUlOREhPVF8yMDI2MDQwNi56aXA=
+2026-04-08 18:23:15.152 +05:00 [INF] ✓ Navigation complete
+2026-04-08 18:23:15.183 +05:00 [INF] Processed Doc: 5854069666 | FP: 472350
+2026-04-08 18:23:17.097 +05:00 [INF] Navigating to: https://gateway-dmz.newbsplink.iata.org/api/document-enquiry/documents/5854069667-2971-UEtfTUlTWUlOREhPVF8yMDI2MDQwNi56aXA=
+2026-04-08 18:23:17.635 +05:00 [INF] ✓ Navigation complete
+2026-04-08 18:23:17.671 +05:00 [INF] Processed Doc: 5854069667 | FP: -6276
+2026-04-08 18:23:19.413 +05:00 [INF] Navigating to: https://gateway-dmz.newbsplink.iata.org/api/document-enquiry/documents/6501828473-2972-UEtfTUlTWUlOREhPVF8yMDI2MDQwNi56aXA=
+2026-04-08 18:23:19.699 +05:00 [INF] ✓ Navigation complete
+2026-04-08 18:23:19.728 +05:00 [INF] Processed Doc: 6501828473 | FP: 220760
+2026-04-08 18:23:22.374 +05:00 [INF] Navigating to: https://gateway-dmz.newbsplink.iata.org/api/document-enquiry/documents/6909121392-2973-UEtfTUlTWUlOREhPVF8yMDI2MDQwNi56aXA=
+2026-04-08 18:23:22.664 +05:00 [INF] ✓ Navigation complete
+2026-04-08 18:23:22.693 +05:00 [INF] Processed Doc: 6909121392 | FP: 167060
+2026-04-08 18:23:24.324 +05:00 [INF] Navigating to: https://gateway-dmz.newbsplink.iata.org/api/document-enquiry/documents/6909121393-2974-UEtfTUlTWUlOREhPVF8yMDI2MDQwNi56aXA=
+2026-04-08 18:23:24.782 +05:00 [INF] ✓ Navigation complete
+2026-04-08 18:23:24.836 +05:00 [INF] Processed Doc: 6909121393 | FP: 167060
+2026-04-08 18:23:27.797 +05:00 [INF] Navigating to: https://gateway-dmz.newbsplink.iata.org/api/document-enquiry/documents/6909125011-2975-UEtfTUlTWUlOREhPVF8yMDI2MDQwNi56aXA=
+2026-04-08 18:23:28.072 +05:00 [INF] ✓ Navigation complete
+2026-04-08 18:23:28.100 +05:00 [INF] Processed Doc: 6909125011 | FP: 34350
+2026-04-08 18:23:30.395 +05:00 [INF] Navigating to: https://gateway-dmz.newbsplink.iata.org/api/document-enquiry/documents/6909144409-2976-UEtfTUlTWUlOREhPVF8yMDI2MDQwNi56aXA=
+2026-04-08 18:23:30.668 +05:00 [INF] ✓ Navigation complete
+2026-04-08 18:23:30.717 +05:00 [INF] Processed Doc: 6909144409 | FP: 2541990
+2026-04-08 18:23:33.089 +05:00 [INF] Navigating to: https://gateway-dmz.newbsplink.iata.org/api/document-enquiry/documents/6909147183-2977-UEtfTUlTWUlOREhPVF8yMDI2MDQwNi56aXA=
+2026-04-08 18:23:33.386 +05:00 [INF] ✓ Navigation complete
+2026-04-08 18:23:33.449 +05:00 [INF] Processed Doc: 6909147183 | FP: 64830
+2026-04-08 18:23:36.016 +05:00 [INF] Navigating to: https://gateway-dmz.newbsplink.iata.org/api/document-enquiry/documents/5853924058-2962-UEtfTUlTWUlOREhPVF8yMDI2MDQwNi56aXA=
+2026-04-08 18:23:36.524 +05:00 [INF] ✓ Navigation complete
+2026-04-08 18:23:36.555 +05:00 [INF] Processed Doc: 5853924058 | FP: 0
+2026-04-08 18:23:39.396 +05:00 [INF] Navigating to: https://gateway-dmz.newbsplink.iata.org/api/document-enquiry/documents/5853924059-2963-UEtfTUlTWUlOREhPVF8yMDI2MDQwNi56aXA=
+2026-04-08 18:23:39.729 +05:00 [INF] ✓ Navigation complete
+2026-04-08 18:23:39.762 +05:00 [INF] Processed Doc: 5853924059 | FP: 249890
+2026-04-08 18:23:41.506 +05:00 [INF] Navigating to: https://gateway-dmz.newbsplink.iata.org/api/document-enquiry/documents/5853924063-2965-UEtfTUlTWUlOREhPVF8yMDI2MDQwNi56aXA=
+2026-04-08 18:23:41.780 +05:00 [INF] ✓ Navigation complete
+2026-04-08 18:23:41.819 +05:00 [INF] Processed Doc: 5853924063 | FP: 249890
+2026-04-08 18:23:43.644 +05:00 [INF] Navigating to: https://gateway-dmz.newbsplink.iata.org/api/document-enquiry/documents/5853924064-2966-UEtfTUlTWUlOREhPVF8yMDI2MDQwNi56aXA=
+2026-04-08 18:23:44.016 +05:00 [INF] ✓ Navigation complete
+2026-04-08 18:23:44.042 +05:00 [INF] Processed Doc: 5853924064 | FP: 249890
+2026-04-08 18:23:46.390 +05:00 [INF] Navigating to: https://gateway-dmz.newbsplink.iata.org/api/document-enquiry/documents/4089696222-2960-UEtfTUlTWUlOREhPVF8yMDI2MDQwNi56aXA=
+2026-04-08 18:23:46.701 +05:00 [INF] ✓ Navigation complete
+2026-04-08 18:23:46.735 +05:00 [INF] Processed Doc: 4089696222 | FP: 96
+2026-04-08 18:23:49.054 +05:00 [INF] Navigating to: https://gateway-dmz.newbsplink.iata.org/api/document-enquiry/documents/3475634892-3952-UEtfTUlTWUlOREhPVF8yMDI2MDQwNy56aXA=
+2026-04-08 18:23:49.563 +05:00 [INF] ✓ Navigation complete
+2026-04-08 18:23:49.595 +05:00 [INF] Processed Doc: 3475634892 | FP: 0
+2026-04-08 18:23:51.195 +05:00 [INF] Navigating to: https://gateway-dmz.newbsplink.iata.org/api/document-enquiry/documents/3475634893-3953-UEtfTUlTWUlOREhPVF8yMDI2MDQwNy56aXA=
+2026-04-08 18:23:51.927 +05:00 [INF] ✓ Navigation complete
+2026-04-08 18:23:51.990 +05:00 [INF] Processed Doc: 3475634893 | FP: 0
+2026-04-08 18:23:54.691 +05:00 [INF] Navigating to: https://gateway-dmz.newbsplink.iata.org/api/document-enquiry/documents/4000160697-3954-UEtfTUlTWUlOREhPVF8yMDI2MDQwNy56aXA=
+2026-04-08 18:23:54.990 +05:00 [INF] ✓ Navigation complete
+2026-04-08 18:23:55.046 +05:00 [INF] Processed Doc: 4000160697 | FP: 150736
+2026-04-08 18:23:57.625 +05:00 [INF] Navigating to: https://gateway-dmz.newbsplink.iata.org/api/document-enquiry/documents/5854049102-3955-UEtfTUlTWUlOREhPVF8yMDI2MDQwNy56aXA=
+2026-04-08 18:23:57.958 +05:00 [INF] ✓ Navigation complete
+2026-04-08 18:23:57.989 +05:00 [INF] Processed Doc: 5854049102 | FP: 777110
+2026-04-08 18:24:00.262 +05:00 [INF] Navigating to: https://gateway-dmz.newbsplink.iata.org/api/document-enquiry/documents/5854069833-3956-UEtfTUlTWUlOREhPVF8yMDI2MDQwNy56aXA=
+2026-04-08 18:24:00.523 +05:00 [INF] ✓ Navigation complete
+2026-04-08 18:24:00.571 +05:00 [INF] Processed Doc: 5854069833 | FP: 0
+2026-04-08 18:24:03.522 +05:00 [INF] Navigating to: https://gateway-dmz.newbsplink.iata.org/api/document-enquiry/documents/5854069834-3957-UEtfTUlTWUlOREhPVF8yMDI2MDQwNy56aXA=
+2026-04-08 18:24:04.003 +05:00 [INF] ✓ Navigation complete
+2026-04-08 18:24:04.037 +05:00 [INF] Processed Doc: 5854069834 | FP: 0
+2026-04-08 18:24:06.272 +05:00 [INF] Navigating to: https://gateway-dmz.newbsplink.iata.org/api/document-enquiry/documents/6909117175-3958-UEtfTUlTWUlOREhPVF8yMDI2MDQwNy56aXA=
+2026-04-08 18:24:06.767 +05:00 [INF] ✓ Navigation complete
+2026-04-08 18:24:06.803 +05:00 [INF] Processed Doc: 6909117175 | FP: 21270
+2026-04-08 18:24:08.335 +05:00 [INF] Navigating to: https://gateway-dmz.newbsplink.iata.org/api/document-enquiry/documents/6909117176-3959-UEtfTUlTWUlOREhPVF8yMDI2MDQwNy56aXA=
+2026-04-08 18:24:08.920 +05:00 [INF] ✓ Navigation complete
+2026-04-08 18:24:08.956 +05:00 [INF] Processed Doc: 6909117176 | FP: 21270
+2026-04-08 18:24:10.595 +05:00 [INF] Navigating to: https://gateway-dmz.newbsplink.iata.org/api/document-enquiry/documents/6909124461-3960-UEtfTUlTWUlOREhPVF8yMDI2MDQwNy56aXA=
+2026-04-08 18:24:10.900 +05:00 [INF] ✓ Navigation complete
+2026-04-08 18:24:10.944 +05:00 [INF] Processed Doc: 6909124461 | FP: 85490
+2026-04-08 18:24:13.115 +05:00 [INF] Navigating to: https://gateway-dmz.newbsplink.iata.org/api/document-enquiry/documents/6909125695-3961-UEtfTUlTWUlOREhPVF8yMDI2MDQwNy56aXA=
+2026-04-08 18:24:13.622 +05:00 [INF] ✓ Navigation complete
+2026-04-08 18:24:13.654 +05:00 [INF] Processed Doc: 6909125695 | FP: 25190
+2026-04-08 18:24:15.740 +05:00 [INF] Navigating to: https://gateway-dmz.newbsplink.iata.org/api/document-enquiry/documents/6909151854-3962-UEtfTUlTWUlOREhPVF8yMDI2MDQwNy56aXA=
+2026-04-08 18:24:16.050 +05:00 [INF] ✓ Navigation complete
+2026-04-08 18:24:16.110 +05:00 [INF] Processed Doc: 6909151854 | FP: 67770
+2026-04-08 18:24:18.010 +05:00 [INF] Navigating to: https://gateway-dmz.newbsplink.iata.org/api/document-enquiry/documents/6909155596-3963-UEtfTUlTWUlOREhPVF8yMDI2MDQwNy56aXA=
+2026-04-08 18:24:18.542 +05:00 [INF] ✓ Navigation complete
+2026-04-08 18:24:18.575 +05:00 [INF] Processed Doc: 6909155596 | FP: 166090
+2026-04-08 18:24:19.283 +05:00 [INF] Successfully saved to Excel: C:\Users\Sabre\Documents\IATAReports\IATA_Billing_Analysis_2026-04-08_18-24-19.xlsx
+2026-04-08 18:24:19.297 +05:00 [INF] Returning to Portal for next tasks...
+2026-04-08 18:24:19.298 +05:00 [INF] Navigating to: https://portal.iata.org/s/?first2FAActivated=%27true%27&language=en_US
+2026-04-08 18:24:23.528 +05:00 [INF] ✓ Navigation complete
+2026-04-08 18:24:23.529 +05:00 [INF] Task complete. Returning to IATA Portal...
+2026-04-08 18:24:23.530 +05:00 [INF] Navigating to: https://portal.iata.org/s/?first2FAActivated=%27true%27&language=en_US
+2026-04-08 18:24:25.649 +05:00 [INF] ✓ Navigation complete
+2026-04-08 18:24:25.655 +05:00 [INF] 
+Press Enter to continue...
+2026-04-08 18:28:54.030 +05:00 [WRN] Invalid option. Please try again.
+2026-04-08 18:28:54.037 +05:00 [INF] ═════════════════════════════════════════════════════
+2026-04-08 18:28:54.044 +05:00 [INF]    IATA Portal Automation - Main Menu
+2026-04-08 18:28:54.049 +05:00 [INF] ═════════════════════════════════════════════════════
+2026-04-08 18:28:54.052 +05:00 [INF] 
+2026-04-08 18:28:54.056 +05:00 [INF] 1. Full Authentication (Login + MFA Setup)
+2026-04-08 18:28:54.063 +05:00 [INF] 2. Login and OTP Injection
+2026-04-08 18:28:54.066 +05:00 [INF] 3. Generate TOTP Code
+2026-04-08 18:28:54.070 +05:00 [INF] 4. View Stored Secret Info
+2026-04-08 18:28:54.072 +05:00 [INF] 5. Run Billing Analysis (Excel Export)
+2026-04-08 18:28:54.074 +05:00 [INF] 6. Exit
+2026-04-08 18:28:54.076 +05:00 [INF] 
+2026-04-08 18:28:54.077 +05:00 [INF] ═════════════════════════════════════════════════════
+2026-04-08 18:28:54.080 +05:00 [INF] Select an option (1-6): 
+2026-04-08 18:28:54.084 +05:00 [INF] 
+Press Enter to continue...
